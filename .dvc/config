@@ -1,0 +1,9 @@
+[core]
+    remote = remote
+    autostage = false
+
+['remote "remote"']
+    url = s3://mlops-test
+    endpointurl = https://t3.storage.dev
+    access_key_id = tid_ccKqoiaxgMrvqZsyOFaQFHaoOoKMfVGkPKGkJJidFiGardZlrU
+    secret_access_key = tsec_Ln8Y-Bq_XzGHqsiYPSsb3VHD3p-bIYkPKskwqqPpGnd8081CFZljZb28DVIJkJQqYzV3+O
