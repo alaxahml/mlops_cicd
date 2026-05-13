@@ -15,3 +15,6 @@ venv
 
 # git
 .git/
+
+mlruns/
+outputs/

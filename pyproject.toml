@@ -7,27 +7,38 @@ authors = ["Alexey Cherkasov <alaxahml@gmail.com>"]
 license = "none"
 
 [tool.poetry.dependencies]
-python = "^3.9"
-pandas = "^1.4.2"
-scikit-learn = "^1.0.2"
-xgboost = "^1.6.0"
-lightgbm = "^3.3.2"
-click = "^8.1.2"
-dvc = {extras = ["s3"], version = "^2.10.2"}
-snakemake = "^7.5.0"
-gdal = {path = "source/GDAL-3.4.2-cp39-cp39-win_amd64.whl"}
-pyproj = {path = "source/pyproj-3.2.1-cp39-cp39-win_amd64.whl"}
-fiona = {path = "source/Fiona-1.8.21-cp39-cp39-win_amd64.whl"}
-shapely = {path = "source/Shapely-1.8.1.post1-cp39-cp39-win_amd64.whl"}
-geopandas = {path = "source/geopandas-0.10.2-py2.py3-none-any.whl"}
-mlflow = "^1.25.1"
-matplotlib = "^3.5.2"
-black = "^23.3.0"
+python = "^3.13"
 
-[tool.poetry.dev-dependencies]
-mypy = "^0.950"
-flake8 = "^4.0.1"
+pandas = "^2.2.3"
+numpy = "^2.2.5"
+
+scikit-learn = "^1.6.1"
+
+xgboost = "^3.0.0"
+lightgbm = "^4.6.0"
+
+click = "^8.1.8"
+
+dvc = { extras = ["s3"], version = "^3.59.1" }
+
+snakemake = "^9.1.7"
+
+mlflow = "^2.22.0"
+
+matplotlib = "^3.10.1"
+
+geopandas = "^1.0.1"
+shapely = "^2.1.0"
+pyproj = "^3.7.1"
+fiona = "^1.10.1"
+gdal = "^3.10.0"
+
+black = "^25.1.0"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.15.0"
+flake8 = "^7.1.2"
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
+requires = ["poetry-core>=1.9.0"]
 build-backend = "poetry.core.masonry.api"
